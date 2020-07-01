@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Manjari", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.header {
+  margin: 1em;
+  display: flex;
+}
+
+.content-left,
+.content-right {
+  width: 15%;
+  align-self: flex-end;
+}
+
+.main-heading {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.year {
+  font-weight: bold;
+  font-size: 3em;
+}
+
+.month {
+  color: red;
+  font-size: 2em;
+}
+
+.month-eng {
+  font-weight: bold;
+}
+
+.calendar {
+  border: 5px red solid;
+  align-self: stretch;
+  flex: 1;
+  margin: 1em;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.meta-data {
+  background-color: rgb(252, 218, 218);
+  border-bottom: 5px red solid;
+  border-right: 1px rgb(110, 110, 110) solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.meta-mal {
+  font-weight: bold;
+  color: red;
+  font-size: 1.5em;
+}
+
+.date-box {
+  border: 1px grey solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+}
+
+.date-top,
+.date-bottom {
+  align-self: stretch;
+  display: flex;
+  justify-content: space-between;
+}
+
+.date {
+  font-size: 3em;
+  font-weight: 800;
+}
+
+.red-date {
+  font-size: 1em;
+  color: red;
+  font-weight: bolder;
+}
+
+.holiday .date {
+  color: red;
+}
